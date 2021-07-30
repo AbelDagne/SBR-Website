@@ -1,21 +1,4 @@
-/*-----------------------------------------------------------------------------------
 
-    Template Name: AppLand
-    Template URI: uideck.com/templates/appland
-    Support: https://uideck.com/support/
-    Version: 1.0
-
------------------------------------------------------------------------------------
-
-    CSS INDEX
-    ===================
-
-    01. Theme default CSS
-	02. Header
-    03. Hero
-	04. Footer
-
------------------------------------------------------------------------------------*/
 /*===========================
       01.COMMON css 
 ===========================*/
@@ -497,7 +480,7 @@ p {
 .sticky {
   position: fixed;
   z-index: 99;
-  background-color: #101315;
+  background-color: #000000;
   -webkit-box-shadow: 0px 20px 50px 0px rgba(0, 0, 0, 0.05);
   -moz-box-shadow: 0px 20px 50px 0px rgba(0, 0, 0, 0.05);
   box-shadow: 0px 20px 50px 0px rgba(0, 0, 0, 0.05);
@@ -806,6 +789,20 @@ p {
     .header-shape-1 {
       width: 100%; } }
 
+      @media (max-width: 991px) {
+        .hidden-mobile {
+          display: none;
+        }
+        .center-mobile {
+          text-align: center;
+        }
+        .mobile-button{
+          margin-right: auto;
+          margin-left: auto;
+        }
+      }
+
+
 .header-shape-2 {
   position: absolute;
   top: 0;
@@ -1088,6 +1085,22 @@ p {
         top: 85px;
         left: 75px; } }
 
+   .about-image .developer {
+    position: relative;
+    max-width: 280px;
+    position: absolute;
+    top: 100px;
+    left: 95px;
+    -webkit-box-shadow: -15px 10px 30px 0px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: -15px 10px 30px 0px rgba(0, 0, 0, 0.3);
+    box-shadow: -15px 10px 30px 0px rgba(0, 0, 0, 0.3);
+    border-radius: 50px; }
+    @media (max-width: 767px) {
+      .about-image .developer {
+        max-width: 175px;
+        border-radius: 25px;
+        top: 85px;
+        left: 75px; } }
 .about-content .main-btn {
   margin-top: 40px; }
 
@@ -1137,6 +1150,7 @@ p {
         padding-top: 0; } }
     .single-features .features-content .features-title {
       font-size: 25px;
+      color: #101315;
       font-weight: 500; }
       @media (max-width: 767px) {
         .single-features .features-content .features-title {
